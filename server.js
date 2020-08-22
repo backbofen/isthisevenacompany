@@ -12,7 +12,7 @@ app.get("/", function(req, res) {
 })
 
 app.get("/test", function(req, res) {
-    res.render("test");
+    res.render("test.html");
 })
 
 app.listen(port, function() {
