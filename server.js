@@ -1,18 +1,23 @@
-var express = require('express');
-var app = express();
-var path = require('path');
-// set port
-var port = process.env.PORT || 8080
+const express = require('express');
+const app = express();
+const path = require('path');
+const router = express.Router();
 
-// viewed at http://localhost:8080
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/public/index.html'));
+router.get('/',function(req,res){
+  res.sendFile(path.join(__dirname+'/index.html'));
+  //__dirname : It will resolve to your project folder.
 });
 
-app.get("/about", function(req, res) {
-    res.sendFile(path.join(__dirname + "/public/test.html"));
+router.get('/about',function(req,res){
+  res.sendFile(path.join(__dirname+'/about.html'));
 });
 
-app.listen(port, function() {
-    console.log("app running on port " + port);
-}) 
+router.get('/sitemap',function(req,res){
+  res.sendFile(path.join(__dirname+'/sitemap.html'));
+});
+
+//add the router
+app.use('/', router);
+app.listen(process.env.port || 8080);
+
+console.log('Running at Port 8080');
