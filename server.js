@@ -6,6 +6,6 @@ app.get('/', function(req, res){
     res.render('index.html');
 });
 //add the router 
-app.listen(process.env.port || 8080);
+app.listen(process.env.PORT || 8080);
 
 console.log('Running at Port 8080');
