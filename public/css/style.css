@@ -3,16 +3,33 @@
 *{
     margin: 0;
     padding: 0;
+    background: #CEA2AC;
 }
 
 .header {
     padding: 20px;
     background: #25283D;
-    color: #efd9ce;
-    font-size: 20px;
+    color: #A675A1;
+    font-size: 19px;
   }
 
 .ole{
+    background: #25283D;
     margin-left: 30px;
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    padding: 30px;
+    width: 96%;
+    background: #25283D;
+    text-align: right;
+ }
+
+ .cred{
+     font-size: 17px;
+     background: #25283D;
+     color: #EFD9CE;
+ }
 
