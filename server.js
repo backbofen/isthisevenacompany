@@ -5,6 +5,8 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function(req, res){
     res.render('index.html');
 });
+
+
 //add the router 
 app.listen(process.env.PORT || 8080);
 
