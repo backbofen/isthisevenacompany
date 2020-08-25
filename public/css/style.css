@@ -15,7 +15,7 @@ nav{
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: #2E1C2B;
+  background-color: #4A1942;
   font-family: 'Sedgwick Ave Display', sans-serif;
 }
 
@@ -50,7 +50,7 @@ nav{
 }
 
 .logo{
-  color: rgb(8, 8, 8);
+  color: #00e600);
   text-transform: lowercase;
   font-size: 23px;
   font-family: 'Sedgwick Ave Display', sans-serif;
