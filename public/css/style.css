@@ -7,14 +7,14 @@
 }
 
 body{
-  background: #EAEAEA;
+  background: #4A1942;
 }
 
 nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
+  min-height: 11vh;
   background-color: #4A1942;
   font-family: 'Sedgwick Ave Display', sans-serif;
 }
@@ -52,14 +52,14 @@ nav{
 .logo{
   color: #00e600;
   text-transform: lowercase;
-  font-size: 23px;
+  font-size: 30px;
   font-family: 'Sedgwick Ave Display', sans-serif;
   cursor: not-allowed;
 }
 
 .nav-links{
   display: flex;
-  width: 48%;
+  width: 52%;
   justify-content: space-around;
 }
 
@@ -68,14 +68,14 @@ nav{
 }
 
 .nav-links li:hover{
-  text-shadow: 2px 2px grey;
+  text-shadow: 4px 4px #006622;
 }
 
 .nav-links a{
   text-decoration: none;
-  color: black;
+  color: #b3ffb3;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
 }
 
