@@ -83,8 +83,8 @@ nav{
   .nav-links{
       position: fixed;
       right: 0px;
-      height: 90vh;
-      top: 10vh;
+      height: 88vh;
+      top: 12vh;
       display: flex;
       background-color: #00e600;
       flex-direction: column;
