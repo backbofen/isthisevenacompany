@@ -21,6 +21,7 @@ app.get('/store', function(req, res){
 app.get('/about', function(req, res){
     res.render('about.html')
 });
+
 app.get('/previews', function(req, res){
     res.render('previews.html')
 });
