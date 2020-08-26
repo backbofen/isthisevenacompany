@@ -73,15 +73,11 @@ nav{
 
 @media screen and (max-width: 768px){
   html, body{
-    max-width: 100%;
     overflow-x: hidden;
   }
 
-  body{
-    position: inherit;
-  }
   .nav-links{
-      position: absolute;
+      position: fixed;
       right: 0px;
       height: 90vh;
       top: 10vh;
