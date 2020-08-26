@@ -76,13 +76,17 @@ nav{
     overflow-x: hidden;
   }
 
+  .nav-links a{
+    color: #4A1942;
+  }
+
   .nav-links{
       position: fixed;
       right: 0px;
       height: 90vh;
       top: 10vh;
       display: flex;
-      background-color: gray;
+      background-color: #00e600;
       flex-direction: column;
       align-items: center;
       width: 100%;
