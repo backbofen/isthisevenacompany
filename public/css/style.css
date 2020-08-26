@@ -19,36 +19,6 @@ nav{
   font-family: 'Sedgwick Ave Display', sans-serif;
 }
 
-.mini{
-  font-size: 1em;
-  color: #000;
-  line-height: 9em;
-  text-indent: 2.5em;
-  position: absolute;
-  font-family: 'Roboto', sans-serif;
-  left: 50%;
-  top: 50%; 
-}
-
-.mega, .bola{
-  line-height: 1.65em;
-  font-weight: bold;
-  font-size: 11em;
-  color: black;
-  font-family: 'Roboto', sans-serif;
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  left: 50%;
-  top: 50%; 
-  margin-left: -150px;
-  margin-top: -150px;
-}
- 
-.boom{
-  color: white;
-}
-
 .logo{
   color: #00e600;
   text-transform: lowercase;
@@ -85,6 +55,8 @@ nav{
 }
 
 .burger div{
+  width: 25px;
+  height: 3px;
   background-color: black;
   margin: 5px;
 }
@@ -99,7 +71,7 @@ nav{
   height: 3px;
 }
 
-@media screen and (max-width: 635px){
+@media screen and (max-width: 768px){
   body{
       overflow-x: hidden;
   }
@@ -124,12 +96,17 @@ nav{
   }
 }
 
-@media screen and (max-height: 500px){
-  .mini, .mega, .bola{
-      display: none;
-  }
-}
-
 .nav-active{
   transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
 }
