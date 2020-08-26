@@ -23,7 +23,7 @@ app.get('/about', function(req, res){
 });
 app.get('/previews', function(req, res){
     res.render('previews.html')
-})
+});
 
 app.listen(process.env.PORT || 8080);
 
