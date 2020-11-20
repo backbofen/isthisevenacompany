@@ -10,8 +10,8 @@ app.get('/', function(req, res){
     res.render('index.html');
 });
 
-app.get('/collections', function(req, res){
-    res.render('collections.html');
+app.get('/videos', function(req, res){
+    res.render('videos.html');
 });
 
 app.get('/store', function(req, res){
