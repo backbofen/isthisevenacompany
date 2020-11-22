@@ -7,7 +7,7 @@
 }
 
 body{
-  background: #4A1942;
+  background: white;
 }
 
 nav{
@@ -15,12 +15,14 @@ nav{
   justify-content: space-around;
   align-items: center;
   min-height: 11vh;
-  background-color: #4A1942;
+  background-color: white;
   font-family: 'Sedgwick Ave Display', sans-serif;
 }
 
 .logo{
-  color: #00e600;
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
   text-transform: lowercase;
   font-size: 30px;
   font-family: 'Sedgwick Ave Display', sans-serif;
@@ -38,12 +40,12 @@ nav{
 }
 
 .nav-links li:hover{
-  text-shadow: 4px 4px #006622;
+  text-shadow: 4px 4px #30CFD0;
 }
 
 .nav-links a{
   text-decoration: none;
-  color: #b3ffb3;
+  color: #330867;
   letter-spacing: 1px;
   font-size: 24px;
   font-weight: bold;
@@ -81,7 +83,7 @@ nav{
   }
 
   .nav-links a{
-    color: #4A1942;
+    color: #330867;
   }
 
   .nav-links{
@@ -90,7 +92,7 @@ nav{
       height: 88vh;
       top: 12vh;
       display: flex;
-      background-color: #00e600;
+      background-color: white;
       flex-direction: column;
       align-items: center;
       width: 100%;
