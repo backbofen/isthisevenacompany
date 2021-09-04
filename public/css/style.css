@@ -20,13 +20,9 @@ nav{
 }
 
 .logo{
-  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-  text-transform: lowercase;
-  font-size: 30px;
-  font-family: 'Sedgwick Ave Display', sans-serif;
-  cursor: not-allowed;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -6px;
 }
 
 .nav-links{
@@ -71,10 +67,6 @@ nav{
 .line2{
   width: 22px;
   height: 3px;
-}
-
-.img{
-  align-content: center;
 }
 
 @media screen and (max-width: 768px){
