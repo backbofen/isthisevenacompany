@@ -28,7 +28,7 @@ nav{
 .nav-links{
 	display: flex;
 	justify-content: space-between;
-	width: 40%;
+	width: 50%;
 }
 
 .nav-links a{
@@ -63,8 +63,8 @@ nav{
 	.nav-links{
 		position: absolute;
 		right: 0px;
-		height: 86.7vh;
-		top: 13.3vh;
+		height: 92%;
+		top: 8vh;
 		background-color: #7D80DA;
 		display: flex;
 		justify-content: space-around;
@@ -116,3 +116,7 @@ nav{
 .toggle .line3{
 	transform: rotate(45deg) translate(-5px, -6px);
 }
+
+.transition {
+	transition: transform 0.5s ease-in;
+  }
