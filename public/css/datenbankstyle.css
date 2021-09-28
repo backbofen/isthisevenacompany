@@ -11,8 +11,8 @@ body{
 }
 
 img{
+	float: left;
 	width: 80px;
-	margin-top: 0.3vh;
 }
 
 nav{
@@ -63,8 +63,8 @@ nav{
 	.nav-links{
 		position: absolute;
 		right: 0px;
-		height: 85vh;
-		top: 14.3vh;
+		height: 86.7vh;
+		top: 13.3vh;
 		background-color: #7D80DA;
 		display: flex;
 		justify-content: space-around;
