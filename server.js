@@ -14,8 +14,8 @@ app.get('/erm', function(req, res){
     res.render('erm.html');
 });
 
-app.get('/erm3', function(req, res){
-    res.render('erm3.html')
+app.get('/sql', function(req, res){
+    res.render('sql.html')
 });
 
 app.get('/transformierung', function(req, res){
