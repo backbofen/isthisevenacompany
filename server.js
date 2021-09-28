@@ -10,20 +10,20 @@ app.get('/', function(req, res){
     res.render('index.html');
 });
 
-app.get('/videos', function(req, res){
-    res.render('videos.html');
+app.get('/erm', function(req, res){
+    res.render('erm.html');
 });
 
-app.get('/store', function(req, res){
-    res.render('store.html')
+app.get('/erm3', function(req, res){
+    res.render('erm3.html')
 });
 
-app.get('/about', function(req, res){
-    res.render('about.html')
+app.get('/transformierung', function(req, res){
+    res.render('transformierung.html')
 });
 
-app.get('/previews', function(req, res){
-    res.render('previews.html')
+app.get('/smodell', function(req, res){
+    res.render('smodell.html')
 });
 
 app.listen(process.env.PORT || 8080);

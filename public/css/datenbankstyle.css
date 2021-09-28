@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+h1 {
+line-height: 205%;
+height: 2em;
+margin-bottom: 0.4em;
+background: lightblue;
+text-align: center;
+font-size: 2.3em;
+font-family: 'Bebas Neue';
+text-decoration: none;
+}
+
+h3{
+margin-top: 5%;
+font-size: 30px;
+text-align: center;
+}
+
+
+table {
+width: 60%;
+font-size: 30px;	
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+border: 1px solid black;	
+}
+
+table,th,td {
+border: 2px solid black;
+border-collapse: collapse;
+}
+
+th {
+padding-top: 15px;
+padding-bottom: 15px;
+background: lightgrey;
+}
+
+td{
+width: 9em;
+}
+
+p{
+margin-top: 4vh;
+display: flex;
+}
+
+a{
+background: white;
+padding-left: auto;
+padding-right: auto;
+margin-top: auto;
+margin-bottom: auto;
+text-align: center;
+overflow-wrap: break-word;
+width: 20vw;
+text-decoration: none;
+color: black;
+border: 3px solid lightblue;
+padding: 1.3vw;
+margin-left: auto;
+margin-right: auto;
+}
