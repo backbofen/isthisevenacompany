@@ -147,6 +147,20 @@ nav{
 	background-color: #9294d6;
 }
 
+.text{
+	font-family: 'Roboto', sans-serif;
+	margin-top: 20vh;
+	text-align: center;
+}
+
+h1{
+	text-decoration: underline;
+}
+
+.arne{
+	color:palevioletred;
+}
+
 
 .nav-active{
 	transform: translateX(0%);
