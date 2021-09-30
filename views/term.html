@@ -1,20 +1,81 @@
 ﻿<!DOCTYPE html>
 
-<header>
+<head>
+<title>INFO LK12</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+<meta charset="utf-8">
+<link href="css/termstyle.css" rel="stylesheet" type="text/css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet"> 
-<title>Erklärung Schichtenmodell</title>
-<meta charset="utf-8">
-<link href="css/ermstyle.css" rel="stylesheet" type="text/css">
-</header>
+<link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500&display=swap" rel="stylesheet">
+
+<!-- Take out after Completion!!!!!
+
+<meta http-equiv="refresh" content="2" >
+
+
+-->
+</head>
 
 <body>
-<h4><a href="/">Startseite</a></h4>
-<h1>Entity-Relationship-Modell</h1>
+	<nav>
+		<div class="logo">
+			<a href="/"><img src="logo.svg" alt="logo"></a>
+		</div>
+			<ul class="nav-links">
+				<li id="themen" onmouseover="tmouseOver()" onmouseout="tmouseOut()">
+					<div class="dropdown1">	
+						<a class="active" href="term">Themen</a>
+							<!--<div class="dropdown-content1">
+								<a href="tsql">SQL</a>
+								<a href="tsmodell">Schichtenmodell</a>
+								<a href="ttransformierung">Vom ERM ins RM</a>
+								<a href="term">Entity-Relationship-Modell</a>
+							</div> -->
+					</div>
+				</li>
+				<li id="tests" onmouseover="temouseOver()" onmouseout="temouseOut()">
+					<div id="testsdiv" class="dropdown1">	
+						<a href="teleks">Tests</a>
+							<!-- <div class="dropdown-content1">
+								<a href="teklausuren">Klausuren</a>
+								<a href="teleks">LEKs</a>
+							</div> -->
+					</div>
+				</li>
+				<li id="ersteller" onmouseover="mouseOver()" onmouseout="mouseOut()">
+					<div id="erstellerdiv" class="dropdown1">	
+						<a href="emicha">Ersteller</a>
+							<!-- <div class="dropdown-content1">
+								<a href="earne">Arne</a>
+								<a href="emicha">Micha</a>
+							</div> -->
+					</div>
+				</li>
+				<li id="unterrichtszeiten" onmouseover="mouseOver()" onmouseout="mouseOut()">
+					<div id="unterrichtszeitendiv" class="dropdown1">	
+						<a href="umontag">Unterrichtszeiten</a>
+							<!-- <div class="dropdown-content1">
+								<a href="umontag">Unterricht Montag</a>
+								<a href="udienstag">Unterricht Dienstag</a>
+								<a href="umittwoch">Unterricht Mittwoch</a>
+								<a href="udonnerstag">Unterricht Donnerstag</a>
+								<a href="ufreitag">Unterricht Freitag</a>
+							</div> -->
+					</div>
+				</li>
+			</ul>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+		<!-- <a class="cta" href="#"><button>Contact</button></a> -->
+	</nav>
 
-<img src="erm.gif" alt="Erklärung des Aufbaus eines ERMs">
-
-<h3>Vielen Dank für Ihre Aufmerksamkeit!</h3>
+	<script src="js/script.js"></script>
 
 </body>
+
+
+

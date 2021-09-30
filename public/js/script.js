@@ -33,3 +33,16 @@ const navSlide = () => {
 }
 
 navSlide();
+
+
+//function tmouseOver() {
+  //document.getElementById("testsdiv").style.visibility = "hidden";
+  //document.getElementById("erstellerdiv").style.visibility = "hidden";
+  //document.getElementById("unterrichtszeitendiv").style.visibility = "hidden";
+//}
+
+//function tmouseOut() {
+  //document.getElementById("testsdiv").style.opacity = 1;
+  //document.getElementById("erstellerdiv").style.opacity = 1;
+  //document.getElementById("unterrichtszeitendiv").style.opacity = 1;
+//}

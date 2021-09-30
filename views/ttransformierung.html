@@ -1,64 +1,81 @@
 ﻿<!DOCTYPE html>
 
-<header>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet"> 
-<title>Tierdatenbank</title>
+<head>
+<title>INFO LK12</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
 <meta charset="utf-8">
-<link href="css/transformierungstyle.css" rel="stylesheet" type="text/css">
-</header>
+<link href="css/ttransformierungsstyle.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500&display=swap" rel="stylesheet">
+
+<!-- Take out after Completion!!!!!
+
+<meta http-equiv="refresh" content="2" >
+
+
+-->
+</head>
 
 <body>
-<h4><a href="/">Startseite</a></h4>
-<h1>Unterrichtsthema des 26.08.2021</h1>
+	<nav>
+		<div class="logo">
+			<a href="/"><img src="logo.svg" alt="logo"></a>
+		</div>
+			<ul class="nav-links">
+				<li>
+					<div class="dropdown1">	
+						<a class="active">Themen</a>
+							<div class="dropdown-content1">
+								<a href="tsql">SQL</a>
+								<a href="tsmodell">Schichtenmodell</a>
+								<a href="ttransformierung">Vom ERM ins RM</a>
+								<a href="term">Entity-Relationship-Modell</a>
+							</div>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown1">	
+						<a>Tests</a>
+							<div class="dropdown-content1">
+								<a href="teklausuren">Klausuren</a>
+								<a href="teleks">LEKs</a>
+							</div>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown1">	
+						<a>Ersteller</a>
+							<div class="dropdown-content1">
+								<a href="earne">Arne</a>
+								<a href="emicha">Micha</a>
+							</div>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown1">	
+						<a>Unterrichtszeiten</a>
+							<div class="dropdown-content1">
+								<a href="umontag">Unterricht Montag</a>
+								<a href="udienstag">Unterricht Dienstag</a>
+								<a href="umittwoch">Unterrciht Mittwoch</a>
+								<a href="udonnerstag">Unterricht Donnerstag</a>
+								<a href="ufreitag">Unterricht Freitag</a>
+							</div>
+					</div>
+				</li>
+			</ul>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+		<!-- <a class="cta" href="#"><button>Contact</button></a> -->
+	</nav>
 
-<table>
-	<tr>
-		<th>Tiere</th>
-		<th>Länder</th>
-		<th>Autos</th>
-	</tr>
-	<tr>
-		<td>Nummer</td>
-		<td>Name</td>
-		<td>Name</td>
-	</tr>
-	<tr>
-		<td>Rasse</td>
-		<td>Temperatur</td>
-		<td>Nummer</td>
-	</tr>
-	<tr>
-		<td>Name</td>
-		<td>Größe</td>
-		<td>Modell</td>
-	</tr>
-	<tr>
-		<td>Geschlecht</td>
-		<td>Vegetation</td>
-		<td>Hersteller</td>
-	</tr>
-	<tr>
-		<td>Besonderheit</td>
-		<td></td>
-		<td>Antriebsart</td>
-	</tr>
-	<tr>
-		<td>Größe</td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>Nahrung</td>
-		<td></td>
-		<td></td>
-	</tr>
-</table>
-
-<p>Heute haben wir uns damit beschäftigt, wie man ein ERM in ein RM (Relationales-Modell) verwandelt.
-<p>Hierzu gibt es auch noch <a class="video" href="https://www.youtube.com/watch?v=XX7pM5hXXmk">ein Erklärvideo.</a></p>
-
-<h3>Vielen dank für ihre Aufmerksamkeit!</h3>
+	<script src="js/script.js"></script>
 
 </body>
+
+
+

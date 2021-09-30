@@ -26,6 +26,26 @@ app.get('/tsmodell', function(req, res){
     res.render('tsmodell.html')
 });
 
+app.get('/earne', function(req, res){
+    res.render('earne.html')
+});
+
+app.get('/emicha', function(req, res){
+    res.render('emicha.html')
+});
+
+app.get('/teklausuren', function(req, res){
+    res.render('teklausuren.html')
+});
+
+app.get('/teleks', function(req, res){
+    res.render('teleks.html')
+});
+
+app.get('/umontag', function(req, res){
+    res.render('umontag.html')
+});
+
 app.listen(process.env.PORT || 8080);
 
 console.log('Running at Port 8080');
