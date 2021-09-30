@@ -99,6 +99,12 @@ nav{
 	text-decoration: underline;
 }
 
+.text{
+	font-family: 'Roboto', sans-serif;
+	margin-top: 2vw;
+	margin-left: 6vw;
+}
+
 @media screen and (max-width:1024px){
 	body{
 		overflow-x: hidden;
