@@ -7,7 +7,7 @@
 }
 
 body{
-	background-color: #65655E;
+	background-color: whitesmoke;
 }
 
 nav:not(:hover) .nav-links{
@@ -87,7 +87,7 @@ nav{
 }
 
 h1{
-	color: #65655E;
+	color: whitesmoke;
 	margin-top: 30vh;
 	text-align: center;
 	font-family: 'Stick No Bills', sans-serif;
@@ -96,7 +96,7 @@ h1{
 }
 
 h2{
-	color: #65655E;
+	color: whitesmoke;
 	text-align: center;
 	font-family: 'Stick No Bills', sans-serif;
 	font-size: 30px;
@@ -104,8 +104,8 @@ h2{
 }
 
 @keyframes color-change {
-	0% { color: whitesmoke; }
-	100% {color: #65655E}
+	0% { color: black; }
+	100% {color: whitesmoke}
 
   }
 
