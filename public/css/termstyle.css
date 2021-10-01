@@ -7,7 +7,7 @@
 }
 
 body{
-	background-color: #65655E;
+	background-color: whitesmoke;
 }
 
 nav:not(:hover) .nav-links{
@@ -112,10 +112,16 @@ td{
 	width: 100%;
 }
 
+h2{
+	text-decoration: underline;
+}
+
 .text{
+	background: whitesmoke;
 	font-family: 'Roboto', sans-serif;
 	margin-top: 2vw;
 	margin-left: 6vw;
+	z-index: 2;
 }
 
 @media screen and (max-width:1024px){

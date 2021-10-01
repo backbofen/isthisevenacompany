@@ -37,7 +37,7 @@
 				</li>
 				<li id="tests" onmouseover="temouseOver()" onmouseout="temouseOut()">
 					<div id="testsdiv" class="dropdown1">	
-						<a href="teleks">Tests</a>
+						<a href="teleks">Klausuren</a>
 							<!-- <div class="dropdown-content1">
 								<a href="teklausuren">Klausuren</a>
 								<a href="teleks">LEKs</a>
@@ -83,11 +83,15 @@
 					<br>
 					<br>
 					<h3>Meistgenutzte Befehle:</h3>
-					<span>SELECT: Ein Befehl, mit dem man Daten entweder zur Anschauung oder zur Weiterverarbeitung auswählt. <br> Man wählt FROM den Ort aus und kann mit WHERE speziell nach Attributen filtern.</span>
+					<span>SELECT: Ein Befehl, mit dem man Daten entweder zur Anschauung oder zur Weiterverarbeitung auswählt. <br> Man wählt mit FROM den Ort aus und kann mit WHERE speziell nach Attributen filtern.</span>
 					<h4>Beispiel: SELECT Spaltenname FROM Tabellenname WHERE Spaltenname1 Attribut1</h4>
 					<br>
 					<span>CREATE: Ein Befehl, mit dem man Datenbanken erstellen kann.</span> 
 					<h4>Beispiel: CREATE TABLE Tabellenname (Spaltenname, Datentyp);</h4>
+					<br>
+					<span>INSERT: Ein Befehl, mit dem man Daten in eine Datenbank einsetzen kann.</span>
+					<h4>Beispiel: INSERT INTO tabellen_name (spalte1, spalte2, spalte3, etc.) VALUES ('Wert1', 'Wert2', 'Wert3', etc.)
+					</h4>
 					<br>
 
 					<span>DELETE: Ein Befehl, mit dem man Daten löschen kann.</span>
@@ -132,6 +136,52 @@
 					</tr>
 					<br>
 					</table>
+
+					<br>
+					<br>
+
+					<h2>Transformationsregeln</h1>
+						<br>
+						<h3>Die 1. Transformationsregel:</h3>
+						<span>Jeder Entitätstyp wird als Tabelle (Relation) dargestellt. Der Schlüssel des Enitätstyps wird Schlüssel der Tabelle.</span>
+						<br>	
+						<br>
+						<h3>Die 2. Transformationsregel:</h3>
+						<span>Jede n : m - Beziehung wird durch eine eigene Tabelle dargestellt.</span>
+						<br>
+						<br>
+						<h3>Die 3. Transformationsregel:</h3>
+						<span>Jede 1:n und 1:1 - Beziehung, die eigene Attribute hat,  wird durch eine eigene Tabelle dargestellt.</span>
+						<br><br>
+						<h3>Die 4. Transformationsregel:</h3>
+						<span>Hat eine 1:n  - Beziehung keine eigenen Attribute dann gilt: <br>
+							Ist eine Entität aus E2 zwingendes Mitglied (d. h. genau 1) einer 1 : n - Beziehung mit einer Entität aus E1, dann erhält E2 den primären Schlüssel von E1 als Attribut. <br>
+							Sofern eine Entität aus E2 freies Mitglied (d. h. 0,1 - konditionell) der 1 : n - Beziehung mit einer Entität aus E1 ist, <br> wird diese Beziehung gewöhnlich in einer eigenen Relation dargestellt.
+<br>
+							<br>
+							Diese Bedingungen gelten für 1:1 und 1: n - Beziehungen.</span>
+						
+							<br>
+							<br>
+					<h2>Normalformen</h1>
+						<br>
+						<h3>Ziele der Normalisierung:</h3>
+						<span>Eliminieren von Redundanzen und Vermeiden von Anomalien.</span>
+
+						<br>
+						<br>
+						<h3>Die 1. Normalform:</h3>
+						<span>Eine Tabelle liegt in der ersten Normalform vor, wenn jeder Attributwert eine atomare, nicht weiter zerlegbare Dateneinheit ist.</span>
+						<br>
+						<br>
+						<h3>Die 2. Normalform:</h3>
+						<span>
+							Eine Tabelle liegt in der zweiten Normalform (2NF) vor, wenn sie in der 1NF ist und jedes Nichtschlüsselattribut voll funktional abhängig vom Primärschlüssel ist.</span>
+							<br>
+							<br>
+						<h3>Die 3. Normalform:</h3>
+						<span>Eine Tabelle liegt in der dritten Normalform (3NF) vor, wenn sie  sich in der 2NF befindet und jedes Nichtschlüsselattribut nicht transitiv abhängig vom Primärschlüssel ist</span>
+						<br><br>
 	</div>
 
 	<script src="js/script.js"></script>
