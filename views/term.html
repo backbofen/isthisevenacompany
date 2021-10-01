@@ -96,10 +96,42 @@
 			<br>
 			<br>
 				<h2>Entity-Relationship-Modell</h2>
+				<img class="ermpic" src="Entity-Relationship-Modell.svg" alt="Entity-Relationship-Modell">
+				<br>
+				<span class="text1">Das Entity-Relationship-Modell – kurz ER-Modell oder ERM; deutsch so viel wie: Modell (zur Darstellung) <br>
+				    von Dingen, Gegenständen, Objekten (= ‚entities‘) und der Beziehungen/Zusammenhänge zwischen diesen (= ‚relationship‘) – dient dazu, 
+					<br> im Rahmen der semantischen Datenmodellierung den in einem gegebenen Kontext <br> (z. B. einem Projekt zur Erstellung eines Informationssystems) relevanten Ausschnitt der realen Welt zu bestimmen und darzustellen.</span>
 			<br>
-				<h2>Relationelles Modell</h2>
 			<br>
 				<h2>Transformieren - Vom ERM ins RM</h2>
+				<span><h3>Entitätstypen:</h3>
+					Jeder Entitätstyp wird in ein eigenes Relationsschema (Tabelle) abgebildet.
+					Schlüssel werden kenntlich gemacht.
+					<br>
+					<br>
+					<h3>Beziehungstypen:</h3>
+					Jeder Beziehungstyp wird in ein eigenes Relationsschema abgebildet. 
+					Die Primärschlüssel der beiden beteiligten Entitätstypen werden zusätzliche Attributen des Relationsschemas. 
+					</span>
+					<table>
+					<tr>
+						<th>Typ</th>
+						<th>Schlüssel</th>
+					</tr>
+					<tr>
+						<td>1:1</td>
+						<td>einer der Primärschlüssel der beiden beteiligten Entitätstypen</td>
+					</tr>
+					<tr>
+						<td>1:n</td>
+						<td>der Primärschlüssel des zweiten Entitätstyps (also der "n-Entität") </td>
+					</tr>
+					<tr>
+						<td>n:m</td>
+						<td>beide Primärschlüssel der beteiligten Entitätstypen</td>
+					</tr>
+					<br>
+					</table>
 	</div>
 
 	<script src="js/script.js"></script>
