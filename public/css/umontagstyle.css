@@ -135,9 +135,10 @@ nav{
 }
 
 table{
+	max-width: 80%;
+	margin-top: 20vh;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20vh;
 }
 
 
