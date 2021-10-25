@@ -6,6 +6,7 @@
 <meta charset="utf-8">
 <link href="css/termstyle.css" rel="stylesheet" type="text/css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -78,28 +79,21 @@
 		<h1>Unsere Unterrichtsthemen</h1>
 			<br>
 			<br>
-				<h2>SQL - Structured Query Language</h2>
-					<span>Eine Standartsprache, um Datenbankenstrukturen zu erstellen sowie die darin enthaltenen Daten abzufragen, zu verwalten und zu bearbeiten.</span>
-					<br>
-					<br>
-					<h3>Meistgenutzte Befehle:</h3>
-					<span>SELECT: Ein Befehl, mit dem man Daten entweder zur Anschauung oder zur Weiterverarbeitung auswählt. <br> Man wählt mit FROM den Ort aus und kann mit WHERE speziell nach Attributen filtern.</span>
-					<h4>Beispiel: SELECT Spaltenname FROM Tabellenname WHERE Spaltenname1 Attribut1</h4>
-					<br>
-					<span>CREATE: Ein Befehl, mit dem man Datenbanken erstellen kann.</span> 
-					<h4>Beispiel: CREATE TABLE Tabellenname (Spaltenname, Datentyp);</h4>
-					<br>
-					<span>INSERT: Ein Befehl, mit dem man Daten in eine Datenbank einsetzen kann.</span>
-					<h4>Beispiel: INSERT INTO tabellen_name (spalte1, spalte2, spalte3, etc.) VALUES ('Wert1', 'Wert2', 'Wert3', etc.)
-					</h4>
-					<br>
 
-					<span>DELETE: Ein Befehl, mit dem man Daten löschen kann.</span>
-					<h4>Beispiel: DELETE FROM Tabellenname WHERE Attribut</h4>
+			<h2>Das 3-Schichtenmodell</h2>
+			<img class="schichtenpic" src="schichten.svg" alt="Das 3-Schichtenmodell">
+			<span><h3>Die Schichten:</h3>
+				Die <b>GUI-Schicht</b> ist für die Darstellung aller Daten und für die Dialogführung zuständig.
+				<br>
+				<br>
+
+				In der <b>Fachkonzeptschicht</b> wird der Kern der Anwendung losgelöst von Speicherung und Präsentation festgelegt. Für den Austausch mit der Benutzungsoberfläche werden Standardmethoden (setAttribut und getAttribut) zur Verfügung gestellt. Die Fachkonzeptschicht besitzt kein Wissen über die Benutzungsoberfläche. Bei einer Änderung der Benutzungsoberfläche muss das Fachkonzept nicht angepasst werden.
+				<br>
+				<br>
+				Die <b>Datenhaltungsschicht</b> sorgt für die Datenspeicherung, z. B. in einer Datenbank. Die GUI-Schicht weiß nicht wie der Zugriff auf die Daten erfolgt.</span>
 			<br>
 			<br>
-			<br>
-				<h2>Entity-Relationship-Modell</h2>
+			<h2>Entity-Relationship-Modell</h2>
 				<img class="ermpic" src="Entity-Relationship-Modell.svg" alt="Entity-Relationship-Modell">
 				<br>
 				<span class="text1">Das Entity-Relationship-Modell – kurz ER-Modell oder ERM; deutsch so viel wie: Modell (zur Darstellung) <br>
@@ -135,11 +129,9 @@
 						<td>beide Primärschlüssel der beteiligten Entitätstypen</td>
 					</tr>
 					<br>
-					</table>
-
+					</table>	
 					<br>
 					<br>
-
 					<h2>Transformationsregeln</h1>
 						<br>
 						<h3>Die 1. Transformationsregel:</h3>
@@ -157,10 +149,10 @@
 						<span>Hat eine 1:n  - Beziehung keine eigenen Attribute dann gilt: <br>
 							Ist eine Entität aus E2 zwingendes Mitglied (d. h. genau 1) einer 1 : n - Beziehung mit einer Entität aus E1, dann erhält E2 den primären Schlüssel von E1 als Attribut. <br>
 							Sofern eine Entität aus E2 freies Mitglied (d. h. 0,1 - konditionell) der 1 : n - Beziehung mit einer Entität aus E1 ist, <br> wird diese Beziehung gewöhnlich in einer eigenen Relation dargestellt.
-<br>
+							<br>
 							<br>
 							Diese Bedingungen gelten für 1:1 und 1: n - Beziehungen.</span>
-						
+						<br>
 							<br>
 							<br>
 					<h2>Normalformen</h1>
@@ -181,7 +173,27 @@
 							<br>
 						<h3>Die 3. Normalform:</h3>
 						<span>Eine Tabelle liegt in der dritten Normalform (3NF) vor, wenn sie  sich in der 2NF befindet und jedes Nichtschlüsselattribut nicht transitiv abhängig vom Primärschlüssel ist</span>
-						<br><br>
+						<br>
+						<br>
+						<br>
+				<h2>SQL - Structured Query Language</h2>
+					<span>Eine Standartsprache, um Datenbankenstrukturen zu erstellen sowie die darin enthaltenen Daten abzufragen, zu verwalten und zu bearbeiten.</span>
+					<br>
+					<br>
+					<h3>Meistgenutzte Befehle:</h3>
+					<span>SELECT: Ein Befehl, mit dem man Daten entweder zur Anschauung oder zur Weiterverarbeitung auswählt. <br> Man wählt mit FROM den Ort aus und kann mit WHERE speziell nach Attributen filtern.</span>
+					<h4>Beispiel: SELECT Spaltenname FROM Tabellenname WHERE Spaltenname1 Attribut1</h4>
+					<br>
+					<span>CREATE: Ein Befehl, mit dem man Datenbanken erstellen kann.</span> 
+					<h4>Beispiel: CREATE TABLE Tabellenname (Spaltenname, Datentyp);</h4>
+					<br>
+					<span>INSERT: Ein Befehl, mit dem man Daten in eine Datenbank einsetzen kann.</span>
+					<h4>Beispiel: INSERT INTO tabellen_name (spalte1, spalte2, spalte3, etc.) VALUES ('Wert1', 'Wert2', 'Wert3', etc.)
+					</h4>
+					<br>
+					<span>DELETE: Ein Befehl, mit dem man Daten löschen kann.</span>
+					<h4>Beispiel: DELETE FROM Tabellenname WHERE Attribut</h4>
+			<br>
 	</div>
 
 	<script src="js/script.js"></script>

@@ -116,6 +116,12 @@ h2{
 	text-decoration: underline;
 }
 
+.schichtenpic{
+	width: 55%;
+	margin-left: 25%;
+	margin-right: 25%; 
+}
+
 .text{
 	background: whitesmoke;
 	font-family: 'Roboto', sans-serif;
