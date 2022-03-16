@@ -17,6 +17,6 @@ h1{
 }
 
 h2{
-	font-size: 20vw;
-	transform: rotate(90deg);
+	font-size: 5vw;
+	color: red;
 }
