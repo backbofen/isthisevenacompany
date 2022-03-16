@@ -21,4 +21,5 @@ h2{
 	color: red;
 	text-align: center;
 	margin-top: 5%;
+	transform: rotate(90deg);
 }
