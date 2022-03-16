@@ -17,6 +17,8 @@ h1{
 }
 
 h2{
-	font-size: 5vw;
+	font-size: 3vw;
 	color: red;
+	text-align: center;
+	margin-top: 5%;
 }
