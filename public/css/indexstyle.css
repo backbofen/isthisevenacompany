@@ -18,8 +18,9 @@ h1{
 
 h2{
 	font-size: 3vw;
-	color: red;
+	color: palevioletred;
 	text-align: center;
 	margin-top: 5%;
 	transform: rotate(90deg);
+	text-decoration: none;
 }
