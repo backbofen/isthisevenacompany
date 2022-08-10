@@ -46,6 +46,11 @@
 .animated-title > div.text-top div span:first-child {
   color: #767676;
 }
+
+.animated-title > div.text-bottom div span:second-child {
+	color: #767676;
+}
+
 .animated-title > div.text-bottom {
   bottom: 0;
 }
