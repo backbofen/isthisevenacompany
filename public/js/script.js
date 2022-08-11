@@ -1,22 +1,7 @@
-function select() {
-
-    var id = $('#My-ID-Input').val();
-
-    $.ajax({
-       type: 'post',
-       url: '/id',
-       data : {
-            id : id
-       },
-       success: function(data) {
-            var id = data.id;
-            $('#My-ID-Input').val(id);
-       },
-       error: function(err) {
-            console.log(err);
-       }
-
-   });
-}
-
-select();
+$.ajax({
+    url: 'https://isthisevenacompany.com/geta',
+    type: "POST",
+    data: "hello"
+   }).done(function(data) {
+     console.log(data);
+ })

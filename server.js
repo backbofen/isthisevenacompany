@@ -22,15 +22,10 @@ var bodyParser = require('body-parser');
 
 app.use(bodyParser.json() );
 
-app.post('/id', function(req, res) {
-
-    var data = req.body;
-    var id = data.id;
-
-    var query = "SELECT * FROM Control WHERE id=" + id;
-    connection.query(query, function(error, result) {
-        console.log(result);
-        res.send(result);
-    });
-
-});
+app.post('/geta', (req, res) => {
+    console.log("i'm taked");
+    setTimeout(()=>{
+      console.log('Get imagesURL successful');
+      res.send("hellp");
+    },2000)
+  })
