@@ -22,5 +22,5 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json() );
 
 app.post('/post', function(req, res) {
-    console.log(req.body);
+    console.log(res.body);
 });
