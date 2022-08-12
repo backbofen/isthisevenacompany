@@ -3,7 +3,7 @@ document.getElementById("button").addEventListener("click", select);
 function select() {
 
     var id = 2
-    cosole.log(document.querySelector('#input').value);
+    console.log(document.querySelector('#input').value);
 
     $.ajax({
        type: 'post',
