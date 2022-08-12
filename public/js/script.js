@@ -8,10 +8,10 @@ function select() {
        type: 'post',
        url: '/id',
        data : {
-            id : id
+            broketail : id
        },
        success: function(data) {
-            var id = data.id;
+            var id = data.broketail;
             $('#My-ID-Input').val(id);
        },
        error: function(err) {
