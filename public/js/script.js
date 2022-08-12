@@ -7,10 +7,13 @@ function select() {
     $.ajax({
        type: 'post',
        url: '/id',
-       data : "negro",
+       data : {
+            "du hurensohn" : id
+       },
        error: function(err) {
             console.log(err);
        }
 
    });
 }
+
