@@ -1,14 +1,22 @@
 function select() {
 
+    var id = $('#My-ID-Input').val();
+
     $.ajax({
-        url: 'https://isthisevenacompany.de/geta',
-        type: "POST",
-        data: "hello"
-       }).done(function(data) {
-         console.log(data);
-     })
+       type: 'post',
+       url: '/id',
+       data : {
+            id : id
+       },
+       success: function(data) {
+            var id = data.id;
+            $('#My-ID-Input').val(id);
+       },
+       error: function(err) {
+            console.log(err);
+       }
+
+   });
 }
 
 select();
-
-console.log("nigy");
