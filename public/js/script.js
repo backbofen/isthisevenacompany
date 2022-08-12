@@ -1,14 +1,20 @@
-function ss() {
+function select() {
 
-$.ajax({
-    url: "/post",
-    type: "POST",
-    data: 'age',
-    success: function (result) {
-        console.log(result);
-    }
-});
+    var id = 2;
 
+    $.ajax({
+       type: 'post',
+       url: '/id',
+       data : {
+            id : id
+       },
+       success: function(data) {
+            var id = data.id;
+            $('#My-ID-Input').val(id);
+       },
+       error: function(err) {
+            console.log(err);
+       }
+
+   });
 }
-
-ss();

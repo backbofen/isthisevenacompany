@@ -14,13 +14,17 @@ app.get('/earne', function(req, res){
     res.render('earne.html')
 });
 
-app.listen(process.env.PORT || 8080);
-
 console.log('Running at Port 8080');
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.json() );
 
-app.post('/post', function(req, res) {
-    console.log(res.body);
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.post('/id', function(req, res, next){
+    var data = req.body;
+    console.log(data); // req.body contains the parsed body of the request.
+
 });
+
+app.listen(process.env.PORT || 8080);
