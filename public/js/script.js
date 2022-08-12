@@ -7,13 +7,7 @@ function select() {
     $.ajax({
        type: 'post',
        url: '/id',
-       data : {
-            broketail : id
-       },
-       success: function(data) {
-            var id = data.broketail;
-            $('#My-ID-Input').val(id);
-       },
+       data : "negro",
        error: function(err) {
             console.log(err);
        }
