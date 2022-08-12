@@ -2,7 +2,7 @@ document.getElementById("button").addEventListener("click", select);
 
 function select() {
 
-    var email = document.querySelector('#input').value;
+    var email = new FormData(document.querySelector('form'))
 
     $.ajax({
        type: 'post',
