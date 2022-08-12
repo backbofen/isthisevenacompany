@@ -2,7 +2,8 @@ document.getElementById("button").addEventListener("click", select);
 
 function select() {
 
-    var id = document.getElementById("input");
+    var id = 2
+    cosole.log(document.getElementById("input"));
 
     $.ajax({
        type: 'post',
