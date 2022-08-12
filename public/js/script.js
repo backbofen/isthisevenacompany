@@ -2,7 +2,7 @@ document.getElementById("button").addEventListener("click", select);
 
 function select() {
 
-    var id = 2;
+    var id = document.getElementById("input");
 
     $.ajax({
        type: 'post',
