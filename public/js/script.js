@@ -4,7 +4,7 @@ function select() {
 
     $.ajax({
        type: 'post',
-       url: '/id',
+       url: 'https://isthisevenacompany.de/id',
        data : {
             id : id
        },
