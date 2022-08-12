@@ -10,3 +10,5 @@ function select() {
 }
 
 select();
+
+console.log("nigy");
