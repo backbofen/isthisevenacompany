@@ -1,22 +1,14 @@
-function select() {
+function ss() {
 
-    var id = $('#My-ID-Input').val();
+$.ajax({
+    url: "/post",
+    type: "POST",
+    data: 'age',
+    success: function (result) {
+        console.log(result);
+    }
+});
 
-    $.ajax({
-       type: 'post',
-       url: 'https://isthisevenacompany.de/id',
-       data : {
-            id : id
-       },
-       success: function(data) {
-            var id = data.id;
-            $('#My-ID-Input').val(id);
-       },
-       error: function(err) {
-            console.log(err);
-       }
-
-   });
 }
 
-select();
+ss();
