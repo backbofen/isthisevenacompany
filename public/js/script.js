@@ -1,4 +1,4 @@
-document.getElementById("button").addEventListener("click", select());
+document.getElementById("button").addEventListener("click", select);
 
 function select() {
 
@@ -20,5 +20,3 @@ function select() {
 
    });
 }
-
-select();
